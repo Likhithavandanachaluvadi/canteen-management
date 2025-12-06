@@ -1,0 +1,84 @@
+/* FULL-PAGE CENTER LAYOUT */
+.admin-orders-container {
+  width: 100%;
+  max-width: 1100px;       /* SAME AS PAGE-CONTAINER */
+  margin: 120px auto 50px; /* ADDED TOP SPACE FOR NAVBAR */
+  padding: 0 30px;
+}
+
+/* TABLE AREA */
+.orders-table-wrapper {
+  overflow-x: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* TABLE */
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.orders-table thead {
+  background: #ffe8f6;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 15px;
+}
+
+/* STATUS BADGES */
+.status-badge {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.pending { background: #ffd4d4; color: #b30000; }
+.preparing { background: #fff0c2; color: #9a7300; }
+.ready { background: #c2f0ff; color: #0077a3; }
+.delivered { background: #d4ffd8; color: #0f8b2d; }
+
+/* ACTION BUTTONS */
+.action-btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-right: 5px;
+}
+
+.btn-start { background: #4ea8de; }
+.btn-ready { background: #ffb085; }
+.btn-deliver { background: #60d394; }
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.delivered-tag {
+  font-weight: 700;
+  color: #2e8b57;
+  font-size: 14px;
+}
+/* ANIMATION */
+@keyframes fadeIn {   
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+} 
+/* FIX DARK MODE TEXT BUG */
+.orders-table th,   
+.orders-table td {
+  color: #000 !important;
+} 

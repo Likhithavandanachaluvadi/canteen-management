@@ -1,0 +1,47 @@
+.dashboard-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f3f4f6;
+  text-align: center;
+}
+
+.dashboard-select h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.dashboard-select p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.dash-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dash-btn.student {
+  background-color: #007bff;
+  color: white;
+}
+
+.dash-btn.admin {
+  background-color: #28a745;
+  color: white;
+}
+
+.dash-btn:hover {
+  transform: scale(1.05);
+}

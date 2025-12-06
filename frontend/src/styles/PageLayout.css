@@ -1,0 +1,49 @@
+/* 🌈 PageLayout.css */
+
+/* Main container for all pages */
+.page-container {
+  width: 100%;
+  max-width: 1200px;      /* perfect size for all pages */
+  margin: 0 auto;         /* centers pages */
+  padding: 120px 20px 60px;
+  min-height: calc(100vh - 80px);
+}
+
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 26px;
+  margin-top: 20px ;
+  color: #c27ce8;
+  letter-spacing: 0.6px;
+  animation: fadeInDown 0.4s ease;
+}
+/* Page title fix */
+.page-title, h2 {
+  text-align: center !important;
+  color: #00dcf9 !important; /* Beautiful pastel purple */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Animations */
+.fade-in { animation: fadeIn 0.4s ease; }
+.slide-up { animation: slideUp 0.4s ease; }
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(15px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

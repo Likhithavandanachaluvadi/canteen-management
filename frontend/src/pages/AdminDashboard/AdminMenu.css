@@ -1,0 +1,171 @@
+/* === 🌟 Admin Menu Page Container === */
+.admin-menu {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.12);
+  font-family: "Poppins", sans-serif;
+  border-left: 6px solid #c27ce8; /* pastel purple accent */
+  animation: fadeIn 0.6s ease;
+}
+
+
+/* =======================================
+        🌸 FORM INPUT STYLING
+   ======================================= */
+.menu-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.menu-form input,
+.menu-form textarea,
+.category-select {
+  padding: 12px 14px;
+  width: 240px;
+  border: 2px solid #e7c9ff;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #ffffff;        /* white background */
+  color: #222 !important;     /* dark visible text */
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+.menu-form input::placeholder,
+.menu-form textarea::placeholder {
+  color: #8a8a8a;
+}
+
+/* Textarea fix */
+.menu-form textarea {
+  height: 80px;
+  resize: none;
+  line-height: 1.4;
+}
+
+/* Dropdown */
+.category-select {
+  cursor: pointer;
+}
+
+.category-select option {
+  background: #ffffff;
+  color: #222;
+}
+
+/* Focus Effects */
+.menu-form input:focus,
+.menu-form textarea:focus,
+.category-select:focus {
+  border-color: #c27ce8;
+  box-shadow: 0 0 8px rgba(194, 124, 232, 0.35);
+  outline: none;
+}
+
+
+/* =======================================
+        🌸 MENU LIST GRID
+   ======================================= */
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+
+/* =======================================
+        🌸 CARD STYLE
+   ======================================= */
+.menu-card {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+  border-left: 6px solid #ffb085; /* pastel peach */
+  text-align: center;
+  transition: 0.3s ease;
+  animation: fadeIn 0.6s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+/* Food Image */
+.menu-card-img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+
+/* =======================================
+        🌸 TEXT STYLE
+   ======================================= */
+.menu-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff7aa2;
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 14px;
+  color: #555;
+  min-height: 40px;
+}
+
+
+/* =======================================
+        🌸 BUTTONS
+   ======================================= */
+.btn-blue,
+.btn-pink {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.25s ease;
+  width: 100px;
+}
+
+.btn-blue {
+  background: #4ea8de;
+}
+
+.btn-pink {
+  background: #ff7aa2;
+}
+
+.btn-blue:hover,
+.btn-pink:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+
+/* =======================================
+        🌸 ANIMATION
+   ======================================= */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

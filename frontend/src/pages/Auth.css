@@ -1,0 +1,138 @@
+/* ============================
+      🌈 AUTH PAGE FULL SCREEN
+   ============================ */
+.auth-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffe1e8, #e9fff9, #fff3da, #e6ddff);
+  background-size: 300% 300%;
+  animation: gradientFlow 10s ease infinite;
+
+  font-family: "Poppins", sans-serif;
+}
+
+/* Smooth BG animation */
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================
+         🌟 AUTH FORM
+   ============================ */
+.auth-form {
+  width: 360px;
+  padding: 2.5rem 2.8rem;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.85);   /* transparent card */
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+  text-align: center;
+
+  animation: fadeIn 0.7s ease;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================
+      🌟 HEADINGS & TEXT
+   ============================ */
+.auth-form h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #c27ce8;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* ============================
+      🌟 INPUT FIELDS
+   ============================ */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+
+  border: 2px solid #e0caff;
+  border-radius: 12px;
+  background: #ffffff;
+
+  font-size: 1rem;
+  color: #333;
+  transition: 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #c27ce8;
+  box-shadow: 0 0 5px rgba(194, 124, 232, 0.4);
+  outline: none;
+}
+
+/* ============================
+      🌟 AUTH BUTTON
+   ============================ */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+
+  background: #ff7aa2;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+  background: #ff5c8a;
+  transform: scale(1.03);
+}
+
+/* ============================
+      🌟 SWITCH LOGIN / REGISTER
+   ============================ */
+.switch-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.register-link {
+  color: #c27ce8;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.register-link:hover {
+  color: #9b44d3;
+}
+
+/* ============================
+      🌟 ERROR MESSAGE
+   ============================ */
+.error {
+  color: #ff3b3b;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}

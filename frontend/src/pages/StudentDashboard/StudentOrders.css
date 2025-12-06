@@ -1,0 +1,46 @@
+
+/* ORDER CARD */
+.order-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 18px;
+  border-left: 6px solid #ffb085;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  animation: slideUp 0.5s ease;
+}
+
+/* ORDER TABLE */
+.order-items-table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+}
+
+.order-items-table th,
+.order-items-table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  color: #222;
+  font-size: 15px;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status-pending { background: #ffd9d4; color: #b44a40; }
+.status-preparing { background: #fff3cd; color: #856404; }
+.status-ready { background: #d4edda; color: #155724; }
+.status-delivered { background: #c3e6cb; color: #155724; }
+
+/* Animations */
+@keyframes slideUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

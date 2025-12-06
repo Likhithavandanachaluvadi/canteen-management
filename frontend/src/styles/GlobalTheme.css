@@ -1,0 +1,75 @@
+/* 🌈 GlobalTheme.css */
+
+/* Let app use full height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;   /* FIX: Removes right white empty area */
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full-screen animated pastel background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+  background: linear-gradient(135deg, #ffe1e8, #e9fff9, #fff3da, #eee3ff);
+  background-size: 300% 300%;
+  animation: gradientFlow 10s ease infinite;
+
+  background-attachment: fixed;
+color: #000;
+  /* ❌ REMOVE flex — it was breaking full width */
+  display: block;
+
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* Background animation */
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Reusable pastel white card */
+.pastel-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 22px 26px;
+  border-left: 6px solid #ffb085;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  transition: 0.25s ease;
+}
+
+.pastel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.16);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.25s ease;
+}
+
+.btn-peach  { background: #ffb085; }
+.btn-blue   { background: #4ea8de; }
+.btn-pink   { background: #ff7aa2; }
+.btn-purple { background: #c8a2ff; }
+.btn-green  { background: #60d394; }
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}

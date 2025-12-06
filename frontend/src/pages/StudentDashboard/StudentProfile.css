@@ -1,0 +1,37 @@
+/* Student Profile Page Styles */
+.profile-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  border-left: 6px solid #ffb085;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Avatar */
+.profile-avatar {
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  background: #ff7aa2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 38px;
+  margin: 0 auto 18px;
+  font-weight: 700;
+}
+
+/* Text */
+.profile-info p {
+  color: #222;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}

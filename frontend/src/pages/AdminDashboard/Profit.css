@@ -1,0 +1,71 @@
+.profit-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 5vw;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Summary Cards */
+.profit-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.card {
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Color accents */
+.card.total { border-left: 6px solid #ff7aa2; }
+.card.today { border-left: 6px solid #4ea8de; }
+.card.month { border-left: 6px solid #60d394; }
+
+.card.total p { color: #ff4f7d; }
+.card.today p { color: #4ea8de; }
+.card.month p { color: #28a745; }
+
+/* Chart Box */
+.chart-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+.chart-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Chart size */
+.chart-box canvas {
+  width: 100% !important;
+  height: 420px !important;
+}
